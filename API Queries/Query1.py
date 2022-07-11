@@ -3,7 +3,8 @@ from pyspark.sql import SparkSession
 
 app = Flask(__name__)
 
-
+# There should be all end points in a single flask file(server file)
+# queries should be more apporipriate as per the requirement of the question
 @app.route("/result", methods=["POST", "GET"])
 def result():
     return fun()
